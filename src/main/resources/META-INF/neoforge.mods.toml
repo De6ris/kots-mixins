@@ -32,13 +32,6 @@ ordering = "NONE"
 side = "BOTH"
 
 [[dependencies.kotsmixins]]
-modId = "mafglib"
-type = "required"
-versionRange = "*"
-ordering = "NONE"
-side = "BOTH"
-
-[[dependencies.kotsmixins]]
 modId = "conditional_mixin"
 type = "required"
 versionRange = "*"
