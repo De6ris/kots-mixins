@@ -1,0 +1,46 @@
+modLoader = "javafml"
+loaderVersion = "[1,)"
+license = "LGPLv3"
+
+[[mods]]
+modId = "kotsmixins"
+version = "${version}"
+displayName = "KOTS-Mixins"
+displayURL="" #optional
+logoFile="icon.png" #optional
+credits="" #optional
+authors="Debris" #optional
+description = '''
+Using mixins to tweak mods for modpack KOTS.
+'''
+
+[[mixins]]
+config = "kotsmixins.mixins.json"
+
+[[dependencies.kotsmixins]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.kotsmixins]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.1]"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.kotsmixins]]
+modId = "mafglib"
+type = "required"
+versionRange = "*"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.kotsmixins]]
+modId = "conditional_mixin"
+type = "required"
+versionRange = "*"
+ordering = "NONE"
+side = "BOTH"

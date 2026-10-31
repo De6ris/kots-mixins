@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "package": "org.kots.kotsmixins.mixins",
+  "minVersion": "0.8",
+  "compatibilityLevel": "JAVA_17",
+  "plugin": "org.kots.kotsmixins.mixin.MixinConfigPlugin",
+  "mixins": [
+  ],
+  "client": [
+    "mod.tweakerge.MiscUtilsMixin",
+    "mod.tweakerge.WorldLoadListenerMixin"
+  ],
+  "server": [
+  ]
+}
