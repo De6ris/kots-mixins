@@ -43,11 +43,11 @@ public class ConfigManager {
 
     @Nullable
     private static <T> T load(Path path, Class<T> clazz) {
-        if (Files.notExists(COMMON)) {
+        if (Files.notExists(path)) {
             save();
             return null;
         }
-        try (BufferedReader reader = Files.newBufferedReader(COMMON)) {
+        try (BufferedReader reader = Files.newBufferedReader(path)) {
             return GSON.fromJson(reader, clazz);
         } catch (Exception exception) {
             LOGGER.error(exception.getMessage(), exception);
